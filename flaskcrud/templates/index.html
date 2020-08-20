@@ -18,7 +18,8 @@
         {{row.email}},
         {{row.tel}},
         {{row.jicw}}<input type="button" value="삭제" onclick="fDel({{row.userid}})">
-        <input type="button" value="수정" onclick="fEdit('{{row.userid}}','{{row.username}}','{{row.email}}','{{row.tel}}','{{row.jicw}}')"><br>
+        <input type="button" value="수정" onclick="fEdit('{{row.userid}}','{{row.username}}','{{row.email}}','{{row.tel}}','{{row.jicw}}')">
+        <input type="button" value="말하기" onclick="fSound()"><br>
     {% endfor %}
     <h1>직원추가</h1>
     <form action="/insert" method="POST">
@@ -49,6 +50,9 @@
             frm.email.value = email;
             frm.tel.value = tel;
             frm.jicw.value = jicw;
+        }
+        function fSound(){
+            location.href = "/playmp3";
         }
     </script>
 </body>
