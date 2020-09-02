@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
+<<<<<<< HEAD
 from gtts import gTTS
 from playsound import playsound
+=======
+<<<<<<< HEAD
+=======
+from gtts import gTTS
+from playsound import playsound
+>>>>>>> 4c394300fb2843c913d7f3ed12dde659d8d0f300
+>>>>>>> a852d1349b816a90e161e504668ccb130fa874ea
 from flask import Flask,render_template,request,url_for,redirect
 from flask_sqlalchemy import SQLAlchemy
 encoding = 'ISO-8859-1'
